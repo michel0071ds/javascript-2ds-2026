@@ -9,8 +9,7 @@
 
     <input type="text" id="teste">
     <button onclick="enviar()">Enviar</button>
-    
-
+    <div id=""resultado"></div>
 </body>
 
 
@@ -30,10 +29,13 @@
     document.writw(estudando);
 
     let teste = document.getElementById("teste");
+    <button onclick="mostraDados()">Clique aqui para enviar os dados para o console</button>
 
     function enviar (){
-        document.write(teste)
-
+        let mensagem = teste.value;
+        //PEGAMOS O .value PARA VER O TEXTO
+        alert("Você digitou: "+ teste);
+        areaTexto.innerHTML = "<h3>Voce digitou: " + mensagem + "</h3>"
     }
     
 
