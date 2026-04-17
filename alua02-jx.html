@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AULA02 - FORMS JS</title>
 </head>
+
 <body>
     <label for="">CAMPO 1:</label>
     <input type="text" id="nome">
@@ -16,7 +18,7 @@
     <input type="password" id="senha">
 
     <button onclick="mostraDados()">Clique aqui para enviar os dados para o console</button>
-    
+
     <div id="resultado1"></div>
     <div id="resultado2"></div>
     <div id="resultado3"></div>
@@ -24,24 +26,24 @@
 
 </body>
 
-    <script>
-        
-        let areaTexto1 = document.getElementById("resultado1")
-        let areaTexto2 = document.getElementById("resultado2")
-        let areaTexto3 = document.getElementById("resultado3")
-        let areaTexto4 = document.getElementById("resultado4")
+<script>
 
-        function mostrarDados(){
+    let areaTexto1 = document.getElementById("resultado1")
+    let areaTexto2 = document.getElementById("resultado2")
+    let areaTexto3 = document.getElementById("resultado3")
+    let areaTexto4 = document.getElementById("resultado4")
 
-          let nome  = document.getElementById("nome").value;
-          let idade = document.getElementById("idade").value;
-          let email = document.getElementById("email").value;
-          let senha = document.getElementById("senha").value;
-          console.log(nome);
-          console.log(idade);
-          console.log(email);
-          console.log(senha);
-        
+    function mostrarDados() {
+
+        let nome = document.getElementById("nome").value;
+        let idade = document.getElementById("idade").value;
+        let email = document.getElementById("email").value;
+        let senha = document.getElementById("senha").value;
+        console.log(nome);
+        console.log(idade);
+        console.log(email);
+        console.log(senha);
+
         let info1 = nome;
         let info2 = idade;
         let info3 = email;
@@ -51,7 +53,8 @@
         areaTexto.innerHTML = "<h3>Voce digitou info2: " + info2 + "</h3> <br>"
         areaTexto.innerHTML = "<h3>Voce digitou info3: " + info3 + "</h3> <br>"
         areaTexto.innerHTML = "<h3>Voce digitou info4: " + info4 + "</h3> <br>"
-    
+
     }
-    </script>
+</script>
+
 </html>
